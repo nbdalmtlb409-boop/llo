@@ -209,7 +209,7 @@ export default function App() {
             {/* Chart */}
             <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-5 h-[300px] flex flex-col">
               <h2 className="text-lg font-semibold mb-4">مخطط السعر (15 دقيقة)</h2>
-              <div className="flex-1 w-full" dir="ltr">
+              <div className="w-full h-[200px]" dir="ltr">
                 <ResponsiveContainer width="100%" height="100%">
                   <LineChart data={chartData}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#27272a" />
