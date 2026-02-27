@@ -129,11 +129,23 @@ export default function App() {
               <div className="space-y-4">
                 <div>
                   <label className="block text-xs text-zinc-400 mb-1">مفتاح API (Binance)</label>
-                  <input type="password" value={apiKey} onChange={e => setApiKey(e.target.value)} className="w-full bg-zinc-950 border border-zinc-800 rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-emerald-500" placeholder={state.apiKey ? 'تم الحفظ (أدخل لتحديثه)' : 'أدخل مفتاح API'} />
+                  <input 
+                    type="password" 
+                    value={apiKey} 
+                    onChange={e => setApiKey(e.target.value)} 
+                    className="w-full bg-zinc-950 border border-zinc-800 rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-emerald-500" 
+                    placeholder={state.apiKey ? 'تم الحفظ (أدخل لتحديثه)' : 'أدخل مفتاح API'} 
+                  />
                 </div>
                 <div>
                   <label className="block text-xs text-zinc-400 mb-1">الرمز السري (API Secret)</label>
-                  <input type="password" value={apiSecret} onChange={e => setApiSecret(e.target.value)} className="w-full bg-zinc-950 border border-zinc-800 rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-emerald-500" placeholder="أدخل الرمز السري" />
+                  <input 
+                    type="password" 
+                    value={apiSecret} 
+                    onChange={e => setApiSecret(e.target.value)} 
+                    className="w-full bg-zinc-950 border border-zinc-800 rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-emerald-500" 
+                    placeholder={state.apiSecret ? 'تم الحفظ (أدخل لتحديثه)' : 'أدخل الرمز السري'} 
+                  />
                 </div>
                 <div className="grid grid-cols-2 gap-4">
                   <div>

@@ -201,7 +201,13 @@ async function analyzeWithGemini() {
 // API Routes
 app.get('/api/state', (req, res) => {
     const { apiSecret, ...safeState } = botState;
-    res.json(safeState);
+    // We need to tell the frontend if the keys are set, without sending the actual keys
+    const stateToSend = {
+        ...safeState,
+        apiKey: botState.apiKey ? 'SET' : '',
+        apiSecret: botState.apiSecret ? 'SET' : ''
+    };
+    res.json(stateToSend);
 });
 
 app.post('/api/config', (req, res) => {
