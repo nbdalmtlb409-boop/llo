@@ -1,0 +1,5 @@
+{
+  "name": "Binance Futures Bot",
+  "description": "Automated trading bot for BNB/USDT on Binance Futures using EMA200, MACD, and RSI.",
+  "requestFramePermissions": []
+}
